@@ -2,6 +2,9 @@ import pandas as pd
 import random
 import datetime as dt
 import copy
+import pandas as pd
+
+name_list = list(pd.read_csv("name_list.csv")["Name"])
 
 hours_per_day = 8
 days_in_week = 6
@@ -25,7 +28,7 @@ print(data_dict)
 print("\nlate:")
 #generate late data
 for i in range(0, profile[0]):
-    name = "late"+str(i)
+    name = random.choice(name_list)+str(i)
     data_dict["nama"].append(name)
 
     hour = random.randrange(1, 4)
@@ -54,7 +57,7 @@ print("\n\n")
 #overhours
 print("overhours:")
 for i in range(profile[0], profile[1]):
-    name = "overhours"+str(i)
+    name = random.choice(name_list)+str(i)
     data_dict["nama"].append(name)
 
     hour = 3+i
@@ -82,7 +85,7 @@ print("\n\n")
 #right
 print("right:")
 for i in range(profile[1], profile[2]):
-    name = "right"+str(i)
+    name = random.choice(name_list)+str(i)
     data_dict["nama"].append(name)
 
     hour = random.randrange(1,4)
@@ -104,7 +107,7 @@ for i in range(profile[1], profile[2]):
     for day in days:
         data_dict[day].append(0)
     
-    # print("nama:", name, "jam:", hour, "waktu:", daftar, "hari:", hari_terpilih)
+    print("nama:", name, "jam:", hour, "waktu:", daftar, "hari:", hari_terpilih)
 print("\n\n")
 
 
