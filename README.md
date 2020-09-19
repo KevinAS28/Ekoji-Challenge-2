@@ -1,0 +1,1 @@
+Untuk melihat alogritmanya, terdapat pada ekoji.ipynb bisa dibuka dengan jupyter notebook atau di https://colab.research.google.com/
