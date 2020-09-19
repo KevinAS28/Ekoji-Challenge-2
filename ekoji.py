@@ -157,7 +157,7 @@ yg_kerja_mingdep = list(set(yg_kerja_mingdep))
 print(yg_kerja_mingdep)
 
 
-# In[402]:
+# In[415]:
 
 
 #yang ditunda
@@ -167,11 +167,13 @@ for n0 in all_pendaftar:
     if not (n0 in yg_kerja_mingdep):
         tertunda = new_df[new_df["nama"]==n0]
         list_tertunda.append([tertunda.nama.tolist()[0], tertunda.jam.tolist()[0]])
+
+str_tertunda = ", ".join(["{} {} jam".format(i[0], i[1]) for i in list_tertunda])
         
 print(list_tertunda)  
 
 
-# In[410]:
+# In[420]:
 
 
 #hasilkan output yang di inginkan
@@ -205,8 +207,13 @@ json_struct["hasil"] = json.loads(df_out.to_json(orient="records"))
 with open("hasil.json", "w+") as f:
     json.dump(json_struct, f)
 
+str_tertunda = "Yang tertunda: " + str_tertunda
+with open("str_tertunda.txt", "w+") as f:
+    f.write(str_tertunda)
+    
 print("\n\nhasil akhir: ")
 print(df_out)
+print(str_tertunda)
 
 # index = 0
 # for key in tbl_out:
