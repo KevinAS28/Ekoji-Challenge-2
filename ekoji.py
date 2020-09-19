@@ -171,11 +171,11 @@ for n0 in all_pendaftar:
 print(list_tertunda)  
 
 
-# In[408]:
+# In[410]:
 
 
 #hasilkan output yang di inginkan
-# import json
+import json
 # instruktur_terpilih = json.dumps(hari_nama)
 # instruktur_tertunda = json.dumps(list_tertunda)
 jadwal = ["{}.00 - {}.00".format(i, i+1) for i in range(8, 16)]
@@ -205,7 +205,8 @@ json_struct["hasil"] = json.loads(df_out.to_json(orient="records"))
 with open("hasil.json", "w+") as f:
     json.dump(json_struct, f)
 
-
+print("\n\nhasil akhir: ")
+print(df_out)
 
 # index = 0
 # for key in tbl_out:
