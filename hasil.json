@@ -1,0 +1,76 @@
+{
+    "hasil": [
+        {
+            "Jadwal": "8.00 - 9.00",
+            "senin": "right81",
+            "selasa": "right94",
+            "rabu": "right27",
+            "kamis": "right99",
+            "jumat": "right25",
+            "sabtu": "right30"
+        },
+        {
+            "Jadwal": "9.00 - 10.00",
+            "senin": "right81",
+            "selasa": "right94",
+            "rabu": "right27",
+            "kamis": "right38",
+            "jumat": "right69",
+            "sabtu": "right52"
+        },
+        {
+            "Jadwal": "10.00 - 11.00",
+            "senin": "right81",
+            "selasa": "right30",
+            "rabu": "right30",
+            "kamis": "right38",
+            "jumat": "right69",
+            "sabtu": "right52"
+        },
+        {
+            "Jadwal": "11.00 - 12.00",
+            "senin": "right27",
+            "selasa": "right99",
+            "rabu": "right52",
+            "kamis": "right38",
+            "jumat": "right69",
+            "sabtu": "right52"
+        },
+        {
+            "Jadwal": "12.00 - 13.00",
+            "senin": "right27",
+            "selasa": "right38",
+            "rabu": "right52",
+            "kamis": "right9",
+            "jumat": "right99",
+            "sabtu": "right62"
+        },
+        {
+            "Jadwal": "13.00 - 14.00",
+            "senin": "right30",
+            "selasa": "right38",
+            "rabu": "right52",
+            "kamis": "right9",
+            "jumat": "right9",
+            "sabtu": "right60"
+        },
+        {
+            "Jadwal": "14.00 - 15.00",
+            "senin": "right99",
+            "selasa": "right38",
+            "rabu": "right93",
+            "kamis": "right9",
+            "jumat": "right9",
+            "sabtu": "right7"
+        },
+        {
+            "Jadwal": "15.00 - 16.00",
+            "senin": 0,
+            "selasa": 0,
+            "rabu": "right93",
+            "kamis": 0,
+            "jumat": "right9",
+            "sabtu": "right7"
+        }
+    ]
+}
