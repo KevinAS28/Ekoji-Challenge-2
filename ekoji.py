@@ -145,7 +145,7 @@ print(dict_jamperhari)
 
 # # Finishing
 
-# In[383]:
+# In[430]:
 
 
 #yang akan kerja minggu depan
@@ -157,7 +157,7 @@ yg_kerja_mingdep = list(set(yg_kerja_mingdep))
 print(yg_kerja_mingdep)
 
 
-# In[415]:
+# In[436]:
 
 
 #yang ditunda
@@ -169,11 +169,10 @@ for n0 in all_pendaftar:
         list_tertunda.append([tertunda.nama.tolist()[0], tertunda.jam.tolist()[0]])
 
 str_tertunda = ", ".join(["{} {} jam".format(i[0], i[1]) for i in list_tertunda])
-        
 print(list_tertunda)  
 
 
-# In[420]:
+# In[437]:
 
 
 #hasilkan output yang di inginkan
@@ -207,7 +206,11 @@ json_struct["hasil"] = json.loads(df_out.to_json(orient="records"))
 with open("hasil.json", "w+") as f:
     json.dump(json_struct, f)
 
-str_tertunda = "Yang tertunda: " + str_tertunda
+jam_tertunda = sum([i[1] for i in list_tertunda])
+str_jam_tertunda = "Total jam tertunda: " + str(jam_tertunda) + " Jam"
+# print(str_jam_tertunda)
+
+str_tertunda = str_jam_tertunda + "\n" + "Yang tertunda: " + str_tertunda
 with open("str_tertunda.txt", "w+") as f:
     f.write(str_tertunda)
     
